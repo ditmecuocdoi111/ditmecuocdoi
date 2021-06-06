@@ -18,7 +18,7 @@ const logger = require("./utils/log");
             res.end();
         });
 
-        dashboard.listen(process.env.port || 0, "0,0,0,0");
+        dashboard.listen(process.env.port || 0);
 
         logger("Đã mở server website...", "[ Starting ]");
     }
